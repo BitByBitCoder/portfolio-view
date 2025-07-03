@@ -1,19 +1,14 @@
 <script setup>
+import { ref } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
-import AppBar from './components/HelloWorld.vue'
+import AppBar from './components/AppBar.vue'
+
+const count = ref(0)
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vuedsf" />
   <AppBar msg="First" />
+  <h1>This is second</h1>
 </template>
 
 <style scoped>
@@ -28,5 +23,8 @@ import AppBar from './components/HelloWorld.vue'
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+.read-the-docs {
+  color: #888;
 }
 </style>
